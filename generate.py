@@ -26,7 +26,6 @@ def parse_args():
 def main():
     args = parse_args()
     data = yaml.load(args.input.read(), Loader=yaml.FullLoader)
-    print(data)
     p = Podcast()
     p.name = data["name"]
     p.website = data["website"]
