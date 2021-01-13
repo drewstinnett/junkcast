@@ -31,7 +31,6 @@ def main():
     p.website = data["website"]
     p.image = data["image"]
     p.description = data["description"]
-    p.website = "https://example.org"
     p.explicit = False
 
     rssfeed = p.rss_str()
