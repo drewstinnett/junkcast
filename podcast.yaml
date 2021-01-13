@@ -1,0 +1,12 @@
+---
+
+name: Junkcast
+website: https://drewstinnett.github.io/junkcast/
+image: https://drewstinnett.github.io/junkcast/images/junkcast-logo.png
+description: >
+  Junkcast is a podcast about movies...technology...whatever Junk Drew is
+  feelin'.  Welcome!
+authors:
+  - name: Drew Stinnett
+    email: drew@drewlink.com
+episodes: []
