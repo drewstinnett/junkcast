@@ -2,7 +2,7 @@
 import sys
 import argparse
 import yaml
-from podgen import Podcast
+from podgen import Podcast, Category, Person
 
 
 def parse_args():
@@ -32,6 +32,13 @@ def main():
     p.image = data["image"]
     p.description = data["description"]
     p.explicit = False
+    p.language = "en-US"
+    p.category = Category(data["category"][0], data["category"][1])
+    authors = []
+    for author_raw in data["authors"]:
+        author = Person(author_raw["name"], author_raw["email"])
+        authors.append(author)
+    p.authors = authors
 
     rssfeed = p.rss_str()
     print(rssfeed)

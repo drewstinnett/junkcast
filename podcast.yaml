@@ -9,4 +9,10 @@ description: >
 authors:
   - name: Drew Stinnett
     email: drew@drewlink.com
-episodes: []
+category:
+  - "TV & Film"
+  - 'Film Reviews'
+episodes:
+  - id: 72A8EDED-D276-47AD-B6FD-89FE1DBEFFEE
+    title: Bloodshot with James
+    audio: https://ia801402.us.archive.org/29/items/72A8EDED-D276-47AD-B6FD-89FE1DBEFFEE/audio.mp3
