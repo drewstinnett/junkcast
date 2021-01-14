@@ -2,7 +2,7 @@
 import sys
 import argparse
 import yaml
-from podgen import Podcast, Category, Person
+from podgen import Podcast, Category, Person, Media, Episode
 
 
 def parse_args():
@@ -39,6 +39,15 @@ def main():
         author = Person(author_raw["name"], author_raw["email"])
         authors.append(author)
     p.authors = authors
+
+    for episode_raw in data["episodes"]:
+        episode = Episode()
+        episode.title = episode_raw["title"]
+        episode.id = episode_raw["id"]
+        media = Media.create_from_server_response(episode_raw["url"])
+        media.fetch_duration()
+        episode.media = media
+        p.add_episode(episode)
 
     rssfeed = p.rss_str()
     print(rssfeed)
