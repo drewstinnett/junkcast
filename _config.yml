@@ -29,8 +29,8 @@ plugins:
   - jekyll-feed
 podcast:
   title: JunkCast
-  description: The Junkcast
-  url: /podcast.xml # podcast xml url
+  description: Film reviews with Drews friends and family...occasionally other things too
+  url: /podcast.xml
   author: Drew Stinnett
   email: drew@drewlink.com
   logo: https://drewstinnett.github.io/junkcast/images/junkcast-logo.jpg
@@ -39,8 +39,8 @@ podcast:
   subcategory: Film Reviews
   type: episodic
   explicit: false
-  complete: true
-  block: false
+  complete: false
+  block: "no"
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
