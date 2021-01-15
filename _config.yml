@@ -35,7 +35,7 @@ podcast:
   email: drew@drewlink.com
   logo: https://drewstinnett.github.io/junkcast/images/junkcast-logo.jpg
   language: en-US
-  category: TV & Film
+  category: "TV &amp; Film"
   subcategory: Film Reviews
   type: episodic
   explicit: false
