@@ -27,7 +27,20 @@ markdown: kramdown
 theme: minima
 plugins:
   - jekyll-feed
-
+podcast:
+  title: JunkCast
+  description: The Junkcast
+  url: /podcast.xml # podcast xml url
+  author: Drew Stinnett
+  email: drew@drewlink.com
+  logo: https://drewstinnett.github.io/junkcast/images/junkcast-logo.jpg
+  language: en-US
+  category: TV & Film
+  subcategory: Film Reviews
+  type: episodic
+  explicit: false
+  complete: true
+  block: false
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
